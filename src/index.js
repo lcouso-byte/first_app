@@ -1,12 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const App = () => {
+// this is a component
+const App = function() {
+    const good = {backgroundColor:'blue', color: 'white'};   
+
     return(
         // returns some jsx code
-        <div>
-            Hi there!
-        </div>
+        <body>
+            <div>
+                <label>enter name</label>
+                <input/>
+                <button style={{backgroundColor:'purple', color: 'white'}}>Submit</button>
+            </div>
+
+            <br></br>
+
+            <div>
+                <label>enter e-email</label>
+                <input/>
+                <button style={good}>Submit</button>
+            </div>
+            
+        </body>
     )
 }
 
